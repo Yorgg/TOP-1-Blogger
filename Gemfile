@@ -12,7 +12,7 @@ end
 
 group :production do
   gem 'pg'
- end
+end
 
 
 # Use SCSS for stylesheets
