@@ -1,7 +1,23 @@
-<h1> Articles </h1>
-<%= link_to "Create a new article", new_article_path, class: 'article_title' %>
-</br></br>
+<br><br>
+
+<img src="/assets/ryan.png" width="220px">
+
+
+
+<h1> Happy Birthday Ryan</h1>
+ 
+
+<%= link_to "Send a bday wish", new_article_path, class: 'article_title' %>
+
+<br><br><br><br>
+
+ Messages: 
+<table>
 <% @articles.each do |x| %>
-<%= link_to x.title, article_path(x), class: 'article_title' %></br>
+<tr><%= link_to x.title, article_path(x), class: 'article_title' %></tr></table>
+</br>
 <% end %>
+ 
+</br></br>
+ 
 
