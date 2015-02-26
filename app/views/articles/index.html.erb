@@ -2,14 +2,13 @@
 
 
 
-<h1> Articles</h1>
+<h1>Jon Yorg - Blog</h1>
  
 
 <%= link_to "Write an Article", new_article_path, class: 'article_title' %>
 
 <br><br>
-
- <p>Messages: </p>
+ 
  
 <% @articles.each do |x| %>
 <p><%= link_to x.title, article_path(x), class: 'article_title' %></p>
