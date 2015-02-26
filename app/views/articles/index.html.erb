@@ -1,7 +1,6 @@
 <br><br>
 
-<img src="/assets/ryan.png" width="220px">
-
+<%= image_tag("ryan.png", :alt => "ryan") %>
 
 
 <h1> Happy Birthday Ryan</h1>
@@ -9,13 +8,12 @@
 
 <%= link_to "Send a bday wish", new_article_path, class: 'article_title' %>
 
-<br><br><br><br>
+<br><br>
 
- Messages: 
-<table>
+ <p>Messages: </p>
+ 
 <% @articles.each do |x| %>
-<tr><%= link_to x.title, article_path(x), class: 'article_title' %></tr></table>
-</br>
+<p><%= link_to x.title, article_path(x), class: 'article_title' %></p>
 <% end %>
  
 </br></br>
